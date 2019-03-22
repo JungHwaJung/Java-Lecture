@@ -15,5 +15,5 @@ public class SongLyrics extends Song{
 		super.show();
 		System.out.println("Lyrics : " + lyrics);
 	}
-	
+
 }
