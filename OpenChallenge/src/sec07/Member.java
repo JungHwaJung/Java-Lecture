@@ -48,13 +48,15 @@ public class Member implements Comparable {
 	
 	@Override
 	public int compareTo(Object o) {
-		Member m = (Member)o;
-		if(this.age > m.age) 
-			return 1;
-		if(this.age < m.age)
-			return -1;
-		return 0;
-	
+		if(o instanceof Member) {
+			Member m = (Member)o;
+			if(this.age > m.age) 
+				return 1;
+			if(this.age < m.age)
+				return -1;
+			return 0;
+		}
+		return 100;
 	}
 	
 }
