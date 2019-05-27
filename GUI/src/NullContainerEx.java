@@ -16,18 +16,11 @@ public class NullContainerEx extends JFrame {
 		la.setSize(200, 20);
 		c.add(la);*/
 		
-		for(int i=1; i<=17; i++) {
-			if(i<=9) {
+		for(int i=1; i<=9; i++) {
 			JButton b = new JButton(Integer.toString(i));
 			b.setLocation(i*15, i*15);
 			b.setSize(50, 20);
 			c.add(b);
-			} else {
-				JButton d = new JButton(Integer.toString(i));
-				d.setLocation(i*15, i*-15);
-				d.setSize(50, 20);
-				e.add(d);
-			}
 		}
 		
 		setSize(350, 200);
