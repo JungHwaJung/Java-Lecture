@@ -8,7 +8,6 @@ public class NullContainerEx extends JFrame {
 		setTitle("NullContainerEx");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		Container c = getContentPane();
-		Container e = getContentPane();
 		
 		c.setLayout(null);
 		
